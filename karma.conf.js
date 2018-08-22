@@ -36,7 +36,8 @@ module.exports = function (config) {
         base: 'Chrome',
         flags: [
           '--headless',
-          '--disable-gpu'
+          '--disable-gpu',
+          '--remote-debugging-port=9222',
         ]
       }
     },
