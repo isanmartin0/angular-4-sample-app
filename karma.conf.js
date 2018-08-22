@@ -35,7 +35,7 @@ module.exports = function (config) {
       ChromeHeadless: {
         base: 'Chrome',
         flags: [
-          '--headless',
+          '--headless'
         ]
       }
     },
