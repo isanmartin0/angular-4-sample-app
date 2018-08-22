@@ -5,7 +5,15 @@ export class AngularAppPage {
     return browser.get('/');
   }
 
+  navigateToCities() {
+    return browser.get('/cities');
+  }
+
   getParagraphText() {
-    return element(by.css('app-root h1')).getText();
+    return element(by.css('app-root')).getText();
+  }
+
+  getCitiesElements() {
+      return element.all(by.tagName('li'));
   }
 }

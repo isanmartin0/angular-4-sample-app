@@ -9,6 +9,8 @@ describe('angular-app App', () => {
 
   it('should display message saying app works', () => {
     page.navigateTo();
-    expect(page.getParagraphText()).toEqual('app works!');
+    //expect(page.getParagraphText()).toEqual('app works!');
+    //expect(page.getParagraphText()).toEqual('Loading...');
+    expect(page.getCitiesElements().count()).toBe(9);
   });
 });
