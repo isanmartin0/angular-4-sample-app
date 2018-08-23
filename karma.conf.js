@@ -10,6 +10,7 @@ module.exports = function (config) {
       require('karma-chrome-launcher'),
       require('karma-jasmine-html-reporter'),
       require('karma-coverage-istanbul-reporter'),
+      require('karma-sonarqube-reporter'),
       require('@angular/cli/plugins/karma')
     ],
     client:{
@@ -28,6 +29,16 @@ module.exports = function (config) {
       reports: [ 'html', 'lcovonly' ],
       fixWebpackSourcePaths: true
     },
+    sonarqubeReporter: {
+      basePath: 'src/app',
+      outputFolder: 'reports',
+      filePattern: '**/*spec.ts',
+      encoding: 'utf-8',
+      legacyMode: false,
+      reportName: (metadata) => {
+        return 'test-report.xml';
+      }
+    },
     angularCli: {
       environment: 'dev'
     },
@@ -43,8 +54,8 @@ module.exports = function (config) {
       }
     },
     reporters: config.angularCli && config.angularCli.codeCoverage
-              ? ['progress', 'coverage-istanbul']
-              : ['progress', 'kjhtml'],
+              ? ['progress', 'coverage-istanbul', 'sonarqube']
+              : ['progress', 'kjhtml', 'sonarqube'],
     port: 9876,
     colors: true,
     logLevel: config.LOG_INFO,
