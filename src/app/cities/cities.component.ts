@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CitiesComponent implements OnInit {
 
-  cityList = [ { city_name: "Bandung", prov_name: "Jawa Barat" },
+  cityList = [ { city_name: "Bandung", prov_name: "Jawa Barat Ciudad con un nombre muy largo para comprobar si las reglas tslint son tenidas en cuenta o por el contrario son ignoradas" },
                { city_name: "Jakarta", prov_name: "DKI Jakarta" },
                { city_name: "Surabaya", prov_name: "Jawa Timur" },
                { city_name: "Yogyakarta", prov_name: "DI Yogyakarta" },
