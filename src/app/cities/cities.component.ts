@@ -20,7 +20,25 @@ export class CitiesComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    console.log("City Component Init");
+    console.log("City Component Init");;
+  }
+
+  function prueba() {
+    i = a += 2, a + b;
+
+    for (var _i = 0; _i < 3; _i++) {
+        var theCity = cityList[_i];
+        console.log(theCity);
+    }
+  }
+
+  function getLength(a: string, b: string, c: string) {
+    const strings = [];  // Noncompliant
+    strings.push(a);
+    strings.push(b);
+    strings.push(c);
+
+    return a.length + b.length + c.length;
   }
 
 }
