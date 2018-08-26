@@ -15,12 +15,11 @@ export class CitiesComponent implements OnInit {
                { city_name: "Medan", prov_name: "Sumatera Utara" },
                { city_name: "Tangerang", prov_name: "Banten" },
                { city_name: "Denpasar", prov_name: "Bali" },
-               { city_name: "Makasar", prov_name: "Sulawesi Selatan" }];
+               { city_name: "Makasar", prov_name: "Sulawesi Selatan" }]
 
   constructor() { }
 
   ngOnInit() {
-    console.log("City Component Init")
     console.log("City Component Init");
   }
 
