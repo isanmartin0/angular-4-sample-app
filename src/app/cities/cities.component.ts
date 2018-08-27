@@ -24,6 +24,8 @@ export class CitiesComponent implements OnInit {
   }
 
 
+/*
+
   getLength(a: string, b: string, c: string) {
     const strings = [];  // Noncompliant
     strings.push(a);
@@ -32,5 +34,5 @@ export class CitiesComponent implements OnInit {
 
     return a.length + b.length + c.length;;
   }
-
+*/
 }
