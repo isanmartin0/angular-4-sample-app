@@ -20,11 +20,11 @@ export class CitiesComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    console.log("City Component Init");
+    console.log("City Component Init");:
   }
 
 
-/*
+
 
   getLength(a: string, b: string, c: string) {
     const strings = [];  // Noncompliant
@@ -34,5 +34,5 @@ export class CitiesComponent implements OnInit {
 
     return a.length + b.length + c.length;;
   }
-*/
+
 }
