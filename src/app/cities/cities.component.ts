@@ -20,7 +20,7 @@ export class CitiesComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    console.log("City Component Init");:
+    console.log("City Component Init");;
   }
 
 
